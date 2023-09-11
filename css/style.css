@@ -130,18 +130,77 @@ h2 {
     padding-right: 20px;
 }
 
+/* Plan Section 1 */
+
 .type-plan-row{
     flex-wrap: wrap;
     row-gap: 20px;
 }
 
-.type-plan-row .col-3 {
-    
+.type-plan-row .col-4 {
+    border: 1px solid black;    
 }
 
 .p-plan {
     text-align: center;
     border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.pad-right-icon {
+    padding-right: 5px;
+}
+
+.ul-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name-plan-type {
+    padding: 25px 0 5px 20px;
+    font-size: 20px;
+}
+
+.price {
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.mounth-price {
+    padding: 5px 20px 0 20px;
+    color: gray;
+   
+}
+
+.icon-flex {
+    display: flex; 
+    align-items: baseline;   
+}
+
+.button-plan {
+    padding: 10px 18px;
+}
+
+.deco-a {
+    text-decoration: underline;
+    color: rgb(83, 59, 241);
+}
+
+.small-hr {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50px;     
+}
+
+.strong-dot {
+    font-size: 18px;    
+}
+
+.check-icon {
+    color: #0061FF;
 }
 
 
@@ -157,10 +216,10 @@ h2 {
     height: 600px;
 } */
 
-.debug.col-3 {
-    border: 1px solid black;
+/* .debug.col-3 {
+    
     height: 600px;
-}
+} */
 
 
 

@@ -90,6 +90,10 @@ img {
     flex-wrap: wrap;
 }
 
+.hero-col {
+    border: none;
+}
+
 .hero-title {
     width: 100%;    
     font-size: 60px;
@@ -142,7 +146,7 @@ h2 {
     row-gap: 20px;
 }
 
-.type-plan-row .col-4 {
+.col-border {
     border: 1px solid black;    
 }
 
@@ -208,13 +212,55 @@ h2 {
     color: #0061FF;
 }
 
-.enterp-button {
+.enterp-button {    
     padding: 10px 80px;
 }
 
 .pro-button {
     margin-top: 22px;
 }
+
+/* Enterprise-Plus */
+.name-plan-plus-type{
+    padding: 25px 0 5px 15px;
+    font-size: 20px;
+}
+.enterp-plus-button {
+    display: inline-block;    
+    margin-top: 20px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.ent-price {
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.team-enterprise-plan {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.team-enterprise-col {
+    border: none;
+}
+
+.ent-container {
+    width: 100%;
+}
+
+.ent-row {
+    justify-content: space-between;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
 
 /* Debug */
 

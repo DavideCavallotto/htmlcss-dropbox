@@ -23,6 +23,12 @@ a {
     height: 670px;
 }
 
+.small-container {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
 .button {    
     color: white;
     background-color: #0061FF;
@@ -53,6 +59,10 @@ li {
 
 .col-4 {
     flex-basis: calc((100% / 12) * 4);
+}
+
+.col-3 {
+    flex-basis: calc((100% / 12) * 3);
 }
 
 img {
@@ -99,6 +109,26 @@ p {
     padding-bottom: 30px;
 }
 
+/* Plan */
+
+h2 {
+    font-size: 30px;
+}
+
+.plan-row {
+    flex-wrap: wrap;
+}
+
+.billing-plan {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.mounth-plan {
+    padding-right: 20px;
+}
+
 /* Debug */
 
 /* .debug.hero-section {
@@ -106,6 +136,10 @@ p {
     height: 600px;
 } */
 
+.debug.small-container {
+    background-color: orange;
+    height: 600px;
+}
 
 
 

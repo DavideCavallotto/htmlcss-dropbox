@@ -104,7 +104,7 @@ img {
     padding-top: 30px;    
 }
 
-p {
+.p-hero {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -123,11 +123,27 @@ h2 {
     display: flex;
     justify-content: flex-start;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .mounth-plan {
     padding-right: 20px;
 }
+
+.type-plan-row{
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.type-plan-row .col-3 {
+    
+}
+
+.p-plan {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
 
 /* Debug */
 
@@ -136,10 +152,17 @@ h2 {
     height: 600px;
 } */
 
-.debug.small-container {
+/* .debug.small-container {
     background-color: orange;
     height: 600px;
+} */
+
+.debug.col-3 {
+    border: 1px solid black;
+    height: 600px;
 }
+
+
 
 
 

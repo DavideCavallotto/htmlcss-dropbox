@@ -17,6 +17,12 @@ a {
     width: 100%;
 }
 
+.container {
+    width: 900px;
+    margin: 0 auto;
+    height: 580px;
+}
+
 .button {    
     color: white;
     background-color: #0061FF;
@@ -29,9 +35,7 @@ ul, ol {
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
+    display: flex;        
 }
 
 ul {
@@ -43,5 +47,64 @@ li {
     padding: 20px;
 }
 
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+}
+
+img {
+    width: 100%;
+}
+
+/* Navigation bar */
+
+.navigation-row {
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Hero  */
+
+.hero-section {
+    background-color: #B4D0E7;    
+}
+
+.hero-row {
+    flex-wrap: wrap;
+}
+
+.hero-title {
+    width: 100%;    
+    font-size: 60px;
+    font-weight: 900;
+    padding-bottom: 50px;
+    
+}
+
+.down-arrow {
+    font-size: 30px;
+}
+
+.hero-img {    
+    height: 420px;
+    padding-top: 30px;    
+}
+
+p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Debug */
+
+/* .debug.hero-section {
+    max-width: 100%;
+    height: 600px;
+} */
+
+
+
 

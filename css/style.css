@@ -15,25 +15,29 @@ a {
 
 .container-big {
     max-width: 100%;
+    margin: 0 auto;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 690px;
 }
 
 .small-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding-top: 120px;
 }
 
+/* .col-4, .col-12 {
+    padding: 10px;
+} */
+
 .button {    
     color: white;
     background-color: #0061FF;
-    padding: 5px 15px;
-
+    display: inline-block;  
 }
 
 ul, ol {
@@ -41,7 +45,9 @@ ul, ol {
 }
 
 .row {
-    display: flex;        
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;            
 }
 
 ul {
@@ -49,28 +55,25 @@ ul {
     align-items: center;
 }
 
-li {
-    padding: 20px 10px 20px 15px;
-}
-
 .col-8 {
     flex-basis: calc((100% / 12) * 8);
 }
 
 .col-4 {
-    flex-basis: calc((100% / 12) * 4 - 30px);
+    flex-basis: calc((100% / 12) * 4);
 }
 
 .col-3 {
     flex-basis: calc((100% / 12) * 3);
 }
 
-.col-3 {
-    flex-basis: calc((100% / 12) * 12);
+.col-12 {
+    flex-basis: 100%;
+
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 /* Navigation bar */
@@ -80,10 +83,29 @@ img {
     align-items: center;
 }
 
+.list-items > * {
+    display: block;
+    line-height: 60px;
+    padding: 0 20px;    
+    font-size: 17px;
+}
+
+.sm-button {
+font-size: 14px;
+line-height: 30px;
+padding: 0 20px;
+}
+
+.list-menu {
+    padding: 0 30px;
+}
+
+
 /* Hero  */
 
 .hero-section {
-    background-color: #B4D0E7;    
+    background-color: #B4D0E7;
+    margin-bottom: 80px;    
 }
 
 .hero-row {
@@ -98,18 +120,25 @@ img {
     width: 100%;    
     font-size: 60px;
     font-weight: 900;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     padding-top: 100px;
     
 }
 
 .down-arrow {
+    display: block;
+    margin-top: 50px;
     font-size: 30px;
+
 }
 
-.hero-img {    
-    height: 420px;
-    padding-top: 30px;    
+.hero-img {  
+    padding-top: 30px;       
+}
+
+.med-button {
+    line-height: 40px;
+    padding: 0 10px;
 }
 
 .p-hero {
@@ -120,11 +149,7 @@ img {
 /* Plan */
 
 h2 {
-    font-size: 30px;
-}
-
-.plan-row {
-    flex-wrap: wrap;
+    font-size: 40px;
 }
 
 .billing-plan {
@@ -139,62 +164,85 @@ h2 {
 }
 
 /* Plan Section 1 */
+/* Professiona */
 
-.type-plan-row{
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 20px;
+.col-pad {
+    padding-right: 20px;    
 }
 
-.col-border {
-    border: 1px solid black;    
+.card {
+    border: 1px solid black;
+    height: 100%;    
 }
 
 .p-plan {
+    line-height: 35px;
     text-align: center;
-    border-bottom: 1px solid black;
-    padding: 10px;
+    border-bottom: 1px solid black;    
+}
+
+.main-plan {
+    padding: 20px;
+}
+
+.title-pro {
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.title-size {
+    font-size: 22px;
+}
+
+.price {    
+    font-weight: bold;
+}
+
+.mounth-price {    
+    color: gray;   
 }
 
 .pad-right-icon {
-    padding-right: 5px;
+    padding-right: 10px;
 }
 
 .ul-plan {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 30px;    
 }
 
-.name-plan-type {
-    padding: 25px 0 5px 20px;
-    font-size: 20px;
+.space-button { 
+    display: flex;   
+    margin-top: 90px;    
 }
 
-.price {
-    padding: 0 20px;
-    font-weight: bold;
+.big-button {
+    white-space: nowrap;
+    padding: 0px 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 270px;
 }
 
-.mounth-price {
-    padding: 5px 20px 0 20px;
-    color: gray;
-   
+.buy-link {
+    margin-bottom: 20px;
 }
 
-.icon-flex {
-    display: flex; 
-    align-items: baseline;   
-}
-
-.button-plan {
-    padding: 10px 10px;
-}
-
-.deco-a {
+.buy-link a {
     text-decoration: underline;
-    color: rgb(83, 59, 241);
+    color: blue;
 }
+
+/* Advanced */
+
+.space-button-adv {
+    margin-top: 47px;
+}
+
+/* Termine modifiche */
 
 .small-hr {
     display: inline-block;
@@ -212,55 +260,30 @@ h2 {
     color: #0061FF;
 }
 
-.enterp-button {    
-    padding: 10px 80px;
-}
-
-.pro-button {
-    margin-top: 22px;
-}
-
 /* Enterprise-Plus */
-.name-plan-plus-type{
-    padding: 25px 0 5px 15px;
-    font-size: 20px;
-}
-.enterp-plus-button {
-    display: inline-block;    
+
+.col-ent-plus {
     margin-top: 20px;
-    padding: 10px 20px;
-    margin-right: 10px;
+    margin-bottom: 50px;
 }
 
-.ent-price {
-    padding: 10px 15px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-
-.team-enterprise-plan {
-    border: 1px solid black;
-    text-align: center;
-    padding: 10px;
-    
-}
-
-.team-enterprise-col {
-    border: none;
-}
-
-.ent-container {
-    width: 100%;
-}
-
-.ent-row {
+.main-ent {
+    display: flex;
     justify-content: space-between;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    padding: 20px;
 }
 
+.title-space {
+    margin-bottom: 10px;
+}
+
+.strong {
+    font-size: 16px;
+}
+
+.ent-p {
+    padding: 20px;
+}
 
 /* Debug */
 
@@ -278,8 +301,6 @@ h2 {
     
     height: 600px;
 } */
-
-
 
 
 

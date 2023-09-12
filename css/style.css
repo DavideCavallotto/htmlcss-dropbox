@@ -14,17 +14,17 @@ a {
 }
 
 .container-big {
-    width: 100%;
+    max-width: 100%;
 }
 
 .container {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     height: 690px;
 }
 
 .small-container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     padding-top: 120px;
 }

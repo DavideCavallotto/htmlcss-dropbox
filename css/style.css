@@ -27,12 +27,8 @@ a {
 .small-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 120px;
+    padding-top: 138px;
 }
-
-/* .col-4, .col-12 {
-    padding: 10px;
-} */
 
 .button {    
     color: white;
@@ -67,9 +63,12 @@ ul {
     flex-basis: calc((100% / 12) * 3);
 }
 
+.col-6 {
+    flex-basis: 50%;
+}
+
 .col-12 {
     flex-basis: 100%;
-
 }
 
 img {
@@ -231,11 +230,11 @@ h2 {
     width: 270px;
 }
 
-.buy-link {
+.underline-link {
     margin-bottom: 20px;
 }
 
-.buy-link a {
+.underline-link a {
     text-decoration: underline;
     color: blue;
 }
@@ -322,6 +321,144 @@ h2 {
     flex-direction: column;
     gap: 20px;
 }
+
+/* Team */
+
+.under-margin {
+    margin-top: 40px;
+}
+
+.team-support .container-big {
+    padding-top: 100px;
+}
+
+.team-support .col-6 {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;   
+} 
+
+.team-support .col-6 img {
+    width: 50%;
+    filter: invert(100%);    
+}
+
+
+.green {
+    background-color: #A2D39B;
+    border: 20px solid #D1E9CD;
+
+}
+
+.bordeaux {
+    background-color: #61082B;
+}
+
+.blue {
+    background-color: #0093CE;
+
+}
+
+.red {
+    background-color: #FF1C1C;
+}
+
+.col-4-grey {
+    background-color: #F5F5F5;
+}
+
+.partners{
+    /* background-color: #F5F5F5; */
+    padding: 100px;    
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+
+}
+
+.partners-imgs::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+.dark-red {
+    background-color: #D5001F;
+}
+
+.light-blue {
+    background-color: #B4D0E7;
+}
+
+.dark-blue {
+    background-color: #0D2481;
+}
+
+.yellow {
+    background-color: #FFD830;   
+}
+
+/* End Main */
+.end-main .container-bg-blue {
+    background-color: #B4D0E7;    
+    
+}
+
+.end-main .small-container {
+    padding-bottom: 138px;
+}
+
+.end-main .col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+.end-main .grey-button {
+    border: none;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    line-height: 50px;    
+    padding: 0 14px;
+    white-space: nowrap;
+
+}
+
+.bordeaux-title {
+    color: #61082B;
+}
+
+.ul-end {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.end-items {
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    line-height: 100px;
+}
+
+.chev-mod {    
+    font-size: 15px;
+    padding-left: 125px;
+    padding-right: 50px;
+
+}
+
+
 
 
 /* Debug */
